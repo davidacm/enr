@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/enr/precache-manifest.28a22c5724f109ef2fa6e200260dc350.js"
+  "/enr/precache-manifest.e9b70ee28435fe7adc2a108e966f2c11.js"
 );
 
 workbox.core.setCacheNameDetails({prefix: "easynotereader"});
