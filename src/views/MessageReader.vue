@@ -4,7 +4,6 @@
       class="full-size"
       v-touch:swipe.prevent="onSwipe"
     >
-    <p aria-live="assertive"> esto es: {{ temp}}</p>
       <b-row>
         <b-col>
           <b-form-checkbox v-model="numAnnotations">
@@ -67,7 +66,6 @@ export default {
       slider: 5,
       oldSlider: 5,
       running: false,
-      temp: 0
     };
   },
   methods: {

@@ -292,7 +292,7 @@ export default {
   },
 };
 </script>
-<style>
+<style scoped>
 @charset "utf-8";
 body {
   font-family: Verdana, Arial, Helvetica, Sans-serif;
