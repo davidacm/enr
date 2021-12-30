@@ -1,6 +1,42 @@
 <template>
   <div>
     <h1 aria-live="assertive">Instrucciones de uso.</h1>
+    <h2>descripción de la aplicación.</h2>
+    <p>
+      Esta aplicación permite al usuario cargar un conjunto de notas, para luego
+      leerlas mediante voz en orden consecutivo, con varios controles y métodos
+      para la navegación entre las notas. Es una aplicación PWA, lo cual quiere
+      decir que la puedes instalar en tu teléfono, computadora o tablet. Utiliza
+      el botón "Instalar app" disponible en la pantalla principal de la
+      aplicación.
+    </p>
+    <p>
+      Fue creada con la finalidad de ayudar a las personas con discapacidad
+      visual a guiarse cuando están realizando una presentación o leyendo algún
+      discurso.
+    </p>
+    <p>
+      Un ejemplo de uso sería que la persona abra la aplicación en el teléfono,
+      escriba o cargue un archivo con sus notas, conecte sus auriculares por
+      cable o bluetooth, y realice su presentación mientras navega y escucha las
+      anotaciones cargadas en la aplicación.
+    </p>
+    <p>
+      La navegación de notas se realiza mediante dos botones siguiente y
+      anterior, o mediante gestos de deslizar hacia arriba y abajo en la
+      pantalla. Puede que necesite deslizar con dos dedos si está usando
+      Talkback. En Voice Over los gestos de deslizar no funcionarán, pero puede
+      activar la respuesta de voz de la aplicación y desactivar temporalmente
+      Voice Over si desea usar los gestos.
+    </p>
+    <p>
+      Con esta aplicación el usuario puede estar seguro que el cursor siempre
+      estará en la última nota leída, aunque toque cualquier parte de la
+      pantalla, cambie de ventana o bloquee el teléfono. Además, los distintos
+      métodos dispuestos para navegar entre las notas, hacen que el usuario
+      pueda leer los mensajes con facilidad, seguridad y comodidad.
+    </p>
+    <h2>Descripción general de la interfaz.</h2>
     <p>Esta aplicación cuenta con tres pestañas:</p>
     <ol>
       <li>
@@ -292,8 +328,6 @@
       >.
     </p>
     <p>Copyright (C) 2021 David CM.</p>
-
-    <b-button @click="close">cerrar</b-button>
   </div>
 </template>
 
