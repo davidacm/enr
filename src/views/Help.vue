@@ -31,6 +31,16 @@
         (Leer sección de gestos táctiles).
       </li>
     </ol>
+    <h2>Instalar la aplicación.</h2>
+    <p>
+      Si desea tener esta aplicación en su escritorio o pantalla de inicio,
+      puede usar el botón "Instalar app"que se encuentra en la pestaña central.
+    </p>
+    <p>
+      Si instala la aplicación en su sistema, tendrá todo el espacio en la
+      pantalla para la aplicación, ocultando los controles de su navegador. Esto
+      podría mejorar la usabilidad.
+    </p>
     <h2>¿Qué son las notas?</h2>
     <p>
       Las notas / mensajes son frases que serán leídas por la aplicación en un
@@ -179,8 +189,8 @@
         lugar.
       </li>
       <li>
-        el botón para impedir el bloqueo de la pantalla no funciona en todos los
-        dispositivos. Hemos tenido algunos casos de teléfonos iPhone donde dicha característica no ha funcionado correctamente.
+        el botón para impedir el bloqueo de la pantalla puede que no funcione en
+        todos los dispositivos.
       </li>
       <li>
         los botones anterior y siguiente pueden sustituirse por un control
@@ -197,7 +207,7 @@
         tiempo.
       </li>
     </ul>
-    <h3>Pantalla de inicio.</h3>
+    <h3>Pantalla de inicio (central).</h3>
     <p>
       En la pantalla de inicio puede cargar un archivo de texto con las notas.
       Al activar el botón para seleccionar el archivo, se mostrará un diálogo de
@@ -209,8 +219,13 @@
       podrás escribir tus notas o pegarlas desde el portapeles.
     </p>
     <p>
-      Además, en esta pantalla se encuentra el botón para abrir estas
-      instrucciones.
+      En la parte superior se ubican los botones para instalar la aplicación en
+      el sistema, un botón por si deseas hacerme una donación, y el botón para
+      mostrar estas instrucciones.
+    </p>
+    <p>
+      El botón para instalar la aplicación se ocultará si la aplicación es
+      instalada en el sistema.
     </p>
     <h3>Pantalla de configuración.</h3>
     <p>Aquí se configura el comportamiento de la aplicación.</p>
