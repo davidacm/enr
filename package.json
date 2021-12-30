@@ -1,21 +1,19 @@
 {
   "name": "easynotereader",
-  "homepage": "https://github.com/davidacm/enr",
   "version": "0.1.0",
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-report": "vue-cli-service build --report",
-    "deploy": "node ./node_modules/vue-gh-pages/index.js -b gh-pages"
+    "deploy": "node ./node_modules/vue-gh-pages/index.js -b gh-pages",
+    "build-report": "vue-cli-service build --report"
   },
   "dependencies": {
     "bootstrap": "^4.6.0",
     "bootstrap-vue": "^2.21.2",
     "core-js": "^3.6.5",
     "nosleep.js": "^0.12.0",
-    "pwa": "^1.9.7",
     "register-service-worker": "^1.7.1",
     "vue": "^2.6.12",
     "vue2-touch-events": "^3.1.1",
@@ -32,5 +30,6 @@
     "eslint-plugin-vue": "^6.2.2",
     "vue-gh-pages": "^1.19.1",
     "vue-template-compiler": "^2.6.11"
-  }
+  },
+  "homepage": "https://github.com/davidacm/enr"
 }

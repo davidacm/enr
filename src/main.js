@@ -2,7 +2,6 @@ import Vue from 'vue'
 import App from './App.vue';
 import {VueSpeak} from './utils';
 Vue.use(VueSpeak);
-Vue.config.productionTip = false;
 
 // import { BootstrapVue} from 'bootstrap-vue'
 import {BTabs, BTab, BContainer, BRow, BCol, BButton, BFormFile, BFormInput, BFormSelect, BFormSelectOption, BFormCheckbox, BFormTextarea, BLink} from 'bootstrap-vue';
