@@ -180,7 +180,7 @@
       </li>
       <li>
         el botón para impedir el bloqueo de la pantalla no funciona en todos los
-        dispositivos, por ejemplo en los teléfonos iPhone.
+        dispositivos. Hemos tenido algunos casos de teléfonos iPhone donde dicha característica no ha funcionado correctamente.
       </li>
       <li>
         los botones anterior y siguiente pueden sustituirse por un control
