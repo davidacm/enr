@@ -1,11 +1,11 @@
 <template>
   <div>
-    <h1 aria-live="assertive">Instrucciones de uso.</h1>
+    <h1 aria-live="assertive" tabindex="-1" ref="sFocus">Instrucciones de uso.</h1>
     <h2>descripción de la aplicación.</h2>
     <p>
-      Esta aplicación permite al usuario cargar un conjunto de notas, para luego
-      leerlas mediante voz en orden consecutivo, con varios controles y métodos
-      para la navegación entre las notas. Es una aplicación PWA, lo cual quiere
+      Esta aplicación permite al usuario cargar un conjunto de notas, y ser
+      leídas mediante voz en orden consecutivo, con varios controles y métodos
+      para la navegación entre las notas. Es una aplicación PWA, lo que quiere
       decir que la puedes instalar en tu teléfono, computadora o tablet. Utiliza
       el botón "Instalar app" disponible en la pantalla principal de la
       aplicación.
@@ -35,6 +35,25 @@
       pantalla, cambie de ventana o bloquee el teléfono. Además, los distintos
       métodos dispuestos para navegar entre las notas, hacen que el usuario
       pueda leer los mensajes con facilidad, seguridad y comodidad.
+    </p>
+    <h2>Instalar la aplicación.</h2>
+    <p>
+      Si desea tener esta aplicación en su escritorio o pantalla de inicio,
+      puede usar el botón "Instalar app"que se encuentra en la pestaña central.
+    </p>
+    <p>
+      Si el botón "Instalar app" no se muestra, es posible que su sistema no
+      soporte la instalación de una PWA.
+    </p>
+    <p>
+      Si está usando un iPhone o iPad, puede pulsar en el botón compartir, y
+      entre las opciones, buscar el botón agregar a pantalla de inicio. De esta
+      manera el ícono estará accesible en su pantalla de inicio.
+    </p>
+    <p>
+      Si instala la aplicación en su sistema, tendrá todo el espacio en la
+      pantalla para la aplicación, ocultando los controles de su navegador. Esto
+      podría mejorar la usabilidad.
     </p>
     <h2>Descripción general de la interfaz.</h2>
     <p>Esta aplicación cuenta con tres pestañas:</p>
@@ -67,16 +86,6 @@
         (Leer sección de gestos táctiles).
       </li>
     </ol>
-    <h2>Instalar la aplicación.</h2>
-    <p>
-      Si desea tener esta aplicación en su escritorio o pantalla de inicio,
-      puede usar el botón "Instalar app"que se encuentra en la pestaña central.
-    </p>
-    <p>
-      Si instala la aplicación en su sistema, tendrá todo el espacio en la
-      pantalla para la aplicación, ocultando los controles de su navegador. Esto
-      podría mejorar la usabilidad.
-    </p>
     <h2>¿Qué son las notas?</h2>
     <p>
       Las notas / mensajes son frases que serán leídas por la aplicación en un
@@ -328,12 +337,17 @@
       >.
     </p>
     <p>Copyright (C) 2021 David CM.</p>
+
+    <b-button @click="close">Cerrar instrucciones</b-button>
   </div>
 </template>
 
 <script>
 export default {
   name: "Help",
+  mounted() {
+    this.$refs.sFocus.focus();
+  },
   methods: {
     close() {
       this.$emit("onclose");

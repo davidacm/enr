@@ -1,5 +1,5 @@
 <template>
-  <help v-if="showInstructions" @onclose="showInstructions = false"></help>
+  <help v-if="showInstructions" @onclose="close"></help>
   <div class="vh-100" v-else>
     <b-container fluid>
       <b-row>
@@ -9,7 +9,9 @@
           >
         </b-col>
         <b-col>
-          <b-button @click="showInstructions = true">Instrucciones</b-button>
+          <b-button @click="showInstructions = true" ref="sFocus">
+            Instrucciones</b-button
+          >
         </b-col>
         <b-col>
           <b-link href="https://davidacm.github.io/donations/" role="button">
@@ -60,6 +62,12 @@ export default {
     });
   },
   methods: {
+    close() {
+      this.showInstructions = false;
+      this.$nextTick(() => {
+        this.$refs.sFocus.focus();
+      });
+    },
     async install() {
       this.deferredPrompt.prompt();
     },
